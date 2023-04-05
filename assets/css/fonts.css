@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Resist Sans';
+    src: url("/assets/fonts/ResistSansText-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans';
+    src: url("/assets/fonts/ResistSansText-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Resist Sans';
+    src: url("asstest/fonts/ResistSansText-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
