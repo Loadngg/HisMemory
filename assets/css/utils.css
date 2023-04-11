@@ -4,3 +4,24 @@
     margin-bottom: 50px;
     text-align: left;
 }
+
+.hidden { display: none !important; }
+
+.text__button {
+    display: inline-block;
+    background-color: var(--text-color);
+    color: var(--background-color);
+    border: none;
+    text-transform: uppercase;
+    font-size: .93rem;
+    line-height: .93rem;
+    padding: .4rem .8rem;
+    border-radius: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.text__button--form { text-transform: none; }
+.brif--title { cursor: pointer; }

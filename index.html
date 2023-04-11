@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/colors.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/utils.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/utils.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 
     <meta name="description" content="HisMemory. Ваша память - наша история" />
     <meta name="keywords" content="HisMemory. Ваша память - наша история" />
@@ -26,7 +26,7 @@
 
             <nav class="nav" id="nav">
                 <a href="#about" class="nav__link">О нас</a>
-                <a href="#contactus" class="nav__link">Связаться</a>
+                <a id="contactus-link" href="#contactus" class="nav__link">Связаться</a>
                 <a href="#account" class="nav__link">Личный кабинет</a>
             </nav>
 
@@ -58,7 +58,7 @@
                         <span>
                             Мы собираем и анализируем большой объём данных о нашем общем прошлом и запечатляем ихна страницах. Наши услуги необходимы вам, если вы занимаетесь историческим исследованием, ведь мы поможем вам сэкономить самый важный и дорогой ресурс - время.
                         </span>
-                        <a class="about__text__button" href="#intro">Узнать кто мы</a>
+                        <a class="text__button" href="#intro">Узнать кто мы</a>
                     </div>
                 </div>
             </div>
@@ -85,10 +85,84 @@
                         <p>Связаться с нами: <a class="nav__link" href="tel:+79953695864">+7 (995) 369-58-64</a></p>
                     </div>
                 </div>
+                <div id="contactus" class="form__container">
+                    <a class="title brif--title" id="form-title-button">Заполните бриф</a>
+                    <form id="form" action method="post" class="form hidden">
+                        <div class="form__item">
+                            <label for="form__repson">Контактное лицо:</label>
+                            <input name="form__repson" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__organization">Организация:</label>
+                            <input name="form__organization" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__goal">Цель проекта, его краткое описание:</label>
+                            <textarea name="form__goal" id="" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <label for="form__people">Целевая аудитория:</label>
+                            <input name="form__people" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__results">Как будут использоваться полученные результаты:</label>
+                            <textarea name="form__results" id="" cols="30" rows="2"></textarea>
+                        </div>
+                        <div class="form__item">
+                            <label for="form__data">Сроки проведения:</label>
+                            <input name="form__data" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__geo-investigation">География исследования:</label>
+                            <input name="form__geo-investigation" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__budget">Предполагаемый бюджет (руб):</label>
+                            <input name="form__budget" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__extra-info">Доп. информация по проекту:</label>
+                            <input name="form__extra-info" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__email">Email:</label>
+                            <input name="form__email" type="text">
+                        </div>
+                        <div class="form__item">
+                            <label for="form__tel">Контактный телефон:</label>
+                            <input name="form__tel" type="text">
+                        </div>
+                        <div class="form__item form__item--checkbox">
+                            <input type="checkbox" name="" id="">
+                            <label for="form__tel">Я согласен на обработку персональных данных</label>
+                        </div>
+                        <a id="form-send-button" class="text__button text__button--form">Отправить</a>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 </main>
-        
+
+<footer class="footer">
+    <div class="container">
+        <hr>
+        <div class="footer__inner">
+            <div class="footer__left">
+                <a class="nav__link" href="#intro">hiSTORYcalMEMory</a>
+            </div>
+            <div class="footer__right">
+                <div class="footer__links">
+                    <a class="nav__link">Vk.com</a>
+                    <a class="nav__link">Telegram</a>
+                    <a class="nav__link">YouTube</a>
+                </div>
+                <a class="nav__link" href="#intro">Вернуться наверх</a>
+            </div>
+        </div>
+    </div>
+</footer>
+       
+<script src="/assets/js/app.js"></script> 
 </body>
 </html>
