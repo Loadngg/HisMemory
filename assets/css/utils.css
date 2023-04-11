@@ -25,3 +25,4 @@
 
 .text__button--form { text-transform: none; }
 .brif--title { cursor: pointer; }
+.brif--title > span { text-decoration: underline 2px var(--text-color); }

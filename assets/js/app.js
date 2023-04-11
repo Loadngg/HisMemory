@@ -37,7 +37,7 @@ const smoothLinks = document.querySelectorAll('a[href^="#"]');
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener('click', function(event) {
         event.preventDefault();
-        const yOffset = 0;
+        const yOffset = -80;
         const id = smoothLink.getAttribute('href');
         const element = document.querySelector(id)
         const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
