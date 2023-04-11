@@ -1,6 +1,27 @@
 // Scroll Top on reload
 window.onbeforeunload = () => window.screenTop();
 
+// Sticky header
+let header = document.getElementById('header');
+let headerH = header.clientHeight;
+let scrollOffset = window.scrollY;
+
+checkPos(scrollOffset);
+
+window.onscroll = function () {
+    scrollOffset = window.scrollY;
+
+    checkPos(scrollOffset);
+}
+
+function checkPos(scrollOffset) {
+    if (scrollOffset >= headerH) {
+        header.classList.add("fixed");
+    } else {
+        header.classList.remove("fixed");
+    }
+}
+
 // Form logic
 const form_block = document.getElementById("form")
 const form_title_button = document.getElementById("form-title-button")

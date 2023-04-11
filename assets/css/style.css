@@ -54,7 +54,8 @@ section:first-child { margin-bottom: 0; }
 }
 
 .header.fixed {
-    padding: 5px 0;
+    padding: 1rem 0;
+    background-color: var(--background-color);
 
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 
