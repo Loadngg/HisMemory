@@ -87,7 +87,7 @@
                         <p>Связаться с нами: <a class="nav__link" href="tel:+79953695864">+7 (995) 369-58-64</a></p>
                     </div>
                 </div>
-                <div id="contactus" class="form__container">
+                <!-- <div id="contactus" class="form__container">
                     <a class="title brif--title" id="form-title-button">Заполните <span>бриф</span></a>
                     <form id="form" action method="post" class="form hidden">
                         <div class="form__item">
@@ -140,7 +140,17 @@
                         </div>
                         <a id="form-send-button" class="text__button text__button--form">Отправить</a>
                     </form>
-                </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section class="form anim-items" id="form">
+        <div class="container">
+            <div class="form__inner">
+                <h1 class="form__title">Нужно исследованием?</h1>
+
+                <button class="text__button" onclick="showForm()">Оставьте заявку!</button>
             </div>
         </div>
     </section>
@@ -194,6 +204,24 @@
             </div>
         </div>
     </section>
+
+    <div class="review__form transparent hidden" id="review__form">
+        <div class="container">
+            <div class="review__form-inner">
+                <div class="close__btn" onclick="closeForm()"></div>
+                <div class="review__form-content form__content">
+                    <h1 class="review__form-title">Добавить отзыв</h1>
+                    <div class="review__form-headers">
+                        <img src="https://place-hold.it/100" alt="" class="review__form-photo">
+                        <input type="text" class="form__name" placeholder="Пожалуйста, представтесь" maxlength="20">
+                        <input type="text" class="form__email" placeholder="Email (не будет публиковаться)" maxlength="30">
+                    </div>
+                    <textarea type="text" class="review__form-text" placeholder="Оставьте свой отзыв" maxlength="120"></textarea>
+                </div>
+                <button class="btn form__btn" onclick="window.location.reload()">Отправить</button>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer class="footer">

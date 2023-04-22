@@ -4,7 +4,8 @@
     --color-green: #A3BFB2; 
     --color-brown-900: #A67244;
     --color-brown-600: #A69180;
-
+    --color-brown-300: #e4d7ca;
     --background-color: #fff8f1;
     --text-color: #0D0D0D;
+    --text-color-alpha-4: rgba(13, 13, 13, .7);
 }
