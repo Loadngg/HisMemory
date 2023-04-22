@@ -5,7 +5,10 @@
     --color-brown-900: #A67244;
     --color-brown-600: #A69180;
     --color-brown-300: #e4d7ca;
+    --color-brown-150: #f3e8de;
     --background-color: #fff8f1;
     --text-color: #0D0D0D;
-    --text-color-alpha-4: rgba(13, 13, 13, .7);
+    
+    --color-brown-150-alpha-5: rgba(243, 232, 222, .5);
+    --text-color-alpha-7: rgba(13, 13, 13, .7);
 }

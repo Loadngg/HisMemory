@@ -16,18 +16,26 @@
     <meta name="keywords" content="HisMemory. Ваша память - наша история" />
     <meta name="google" content="notranslate" />
 
-    <title>hiSTORYcalMEMory</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#454545">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Historycal memory</title>
 </head>
 <body>
     
 <header class="header" id="header">
     <div class="container">
         <div class="header__inner">
-            <div class="header__logo">hiSTORYcalMEMory</div>
+            <div class="header__logo">Historycal memory</div>
 
             <nav class="nav" id="nav">
                 <a href="#about" class="nav__link">О нас</a>
-                <a id="contactus-link" href="#contactus" class="nav__link">Связаться</a>
+                <a id="contactus-link" href="#form" class="nav__link">Связаться</a>
                 <a href="#team" class="nav__link">Наша команда</a>
                 <a href="login.html" class="nav__link">Личный кабинет</a>
             </nav>
@@ -51,7 +59,6 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
-                <h2 class="title">О нас</h2>
                 <div class="about__text">
                     <div class="about__text--left-column">
                         HisMemory - статистический центр, занимающийся проведением просопографических исследований.
@@ -70,7 +77,7 @@
     <section class="research">
         <div class="container">
             <div class="research__inner">
-                <h2 class="title">Стоимость исследованя</h2>
+                <h2 class="title">Наши исследования</h2>
                 <div class="research__text">
                     <div class="research__text--left-column">
                         <ul class="research-ul">
@@ -82,65 +89,11 @@
                         </ul>
                     </div>
                     <div class="research__text--right-column">
-                        <p>Перед тем, как сделать заказ на исследование нужно определить цель и обозначить конкретные желания.</p>
+                        <p>Перед тем, как сделать заказ нужно определить цель и обозначить конкретные желания.</p>
                         </br>
                         <p>Связаться с нами: <a class="nav__link" href="tel:+79953695864">+7 (995) 369-58-64</a></p>
                     </div>
                 </div>
-                <!-- <div id="contactus" class="form__container">
-                    <a class="title brif--title" id="form-title-button">Заполните <span>бриф</span></a>
-                    <form id="form" action method="post" class="form hidden">
-                        <div class="form__item">
-                            <label for="form__repson">Контактное лицо:</label>
-                            <input name="form__repson" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__organization">Организация:</label>
-                            <input name="form__organization" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__goal">Цель проекта, его краткое описание:</label>
-                            <textarea name="form__goal" id="" cols="30" rows="2"></textarea>
-                        </div>
-                        <div class="form__item">
-                            <label for="form__people">Целевая аудитория:</label>
-                            <input name="form__people" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__results">Как будут использоваться полученные результаты:</label>
-                            <textarea name="form__results" id="" cols="30" rows="2"></textarea>
-                        </div>
-                        <div class="form__item">
-                            <label for="form__data">Сроки проведения:</label>
-                            <input name="form__data" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__geo-investigation">География исследования:</label>
-                            <input name="form__geo-investigation" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__budget">Предполагаемый бюджет (руб):</label>
-                            <input name="form__budget" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__extra-info">Доп. информация по проекту:</label>
-                            <input name="form__extra-info" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__email">Email:</label>
-                            <input name="form__email" type="text">
-                        </div>
-                        <div class="form__item">
-                            <label for="form__tel">Контактный телефон:</label>
-                            <input name="form__tel" type="text">
-                        </div>
-                        <div class="form__item form__item--checkbox">
-                            <input type="checkbox" name="" id="">
-                            <label for="form__tel">Я согласен на обработку персональных данных</label>
-                        </div>
-                        <a id="form-send-button" class="text__button text__button--form">Отправить</a>
-                    </form>
-                </div> -->
             </div>
         </div>
     </section>
@@ -148,7 +101,7 @@
     <section class="form anim-items" id="form">
         <div class="container">
             <div class="form__inner">
-                <h1 class="form__title">Нужно исследованием?</h1>
+                <h1 class="form__title">Нужно исследование?</h1>
 
                 <button class="text__button" onclick="showForm()">Оставьте заявку!</button>
             </div>
@@ -159,66 +112,66 @@
         <div class="container">
             <div class="team__inner">
                 <h2 class="title">Наша команда</h2>
-                <div class="team__grid">
+                <div class="team__photos">
                     <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-1">
-                        <span class="photo__subtitle">photo-1</span>
+                        <img src="/assets/img/photo-1.png" alt="photo" class="photo">
+                        <div class="photos__info">
+                            <div class="photos__title">Ксения</div>
+                            <div class="photos__text">Директор по маркетингу</div>
+                        </div>
                     </div>
                     <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-2">
-                        <span class="photo__subtitle">photo-2</span>
+                        <img src="/assets/img/photo-2.png" alt="photo" class="photo">
+                        <div class="photos__info">
+                            <div class="photos__title">Дмитрий</div>
+                            <div class="photos__text">Пинал хуй</div>
+                        </div>
                     </div>
                     <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-3">
-                        <span class="photo__subtitle">photo-3</span>
+                        <img src="/assets/img/photo-3.png" alt="photo" class="photo">
+                        <div class="photos__info">
+                            <div class="photos__title">Михаил</div>
+                            <div class="photos__text">Гениральный директор</div>
+                        </div>
                     </div>
                     <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-4">
-                        <span class="photo__subtitle">photo-4</span>
-                    </div>
-                    <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-5">
-                        <span class="photo__subtitle">photo-5</span>
-                    </div>
-                    <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-6">
-                        <span class="photo__subtitle">photo-6</span>
-                    </div>
-                    <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-7">
-                        <span class="photo__subtitle">photo-7</span>
-                    </div>
-                    <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-8">
-                        <span class="photo__subtitle">photo-8</span>
-                    </div>
-                    <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-9">
-                        <span class="photo__subtitle">photo-9</span>
-                    </div>
-                    <div class="team__photo__item">
-                        <img src="https://place-hold.it/300x400" alt="photo" class="photo-10">
-                        <span class="photo__subtitle">photo-10</span>
+                        <img src="/assets/img/photo-4.png" alt="photo" class="photo">
+                        <div class="photos__info">
+                            <div class="photos__title">Первый раз вижу</div>
+                            <div class="photos__text">Пинал хуй</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="review__form transparent hidden" id="review__form">
+    <div class="review transparent hidden" id="review">
         <div class="container">
-            <div class="review__form-inner">
+            <div class="review__inner">
                 <div class="close__btn" onclick="closeForm()"></div>
-                <div class="review__form-content form__content">
-                    <h1 class="review__form-title">Добавить отзыв</h1>
-                    <div class="review__form-headers">
-                        <img src="https://place-hold.it/100" alt="" class="review__form-photo">
-                        <input type="text" class="form__name" placeholder="Пожалуйста, представтесь" maxlength="20">
-                        <input type="text" class="form__email" placeholder="Email (не будет публиковаться)" maxlength="30">
-                    </div>
-                    <textarea type="text" class="review__form-text" placeholder="Оставьте свой отзыв" maxlength="120"></textarea>
+                <div class="review__content form__content">
+                    <h2 class="review__title">Заявка</h2>
+                    <form id="review__form" action method="post" class="review__form">
+                        <div class="review__form__item">
+                            <label for="emailOrTel">Обратная связь:</label>
+                            <input name="emailOrTel" type="text" class="form__input" placeholder="Email или телефон" maxlength="30">
+                        </div>
+                        <div class="review__form__item">
+                            <label for="name">Тема исследования:</label>
+                            <input name="name" type="text" class="form__input" placeholder="Тема" maxlength="20">
+                        </div>
+                        <div class="review__form__item">
+                            <label for="geography">География исследования:</label>
+                            <input name="geography" type="text" class="form__input" placeholder="География" maxlength="30">
+                        </div>
+                        <div class="review__form__item">
+                            <label for="whishes">Ваши пожелания:</label>
+                            <input name="whishes" type="text" class="form__input" placeholder="Пожелания" maxlength="30">
+                        </div>
+                    </form>
                 </div>
-                <button class="btn form__btn" onclick="window.location.reload()">Отправить</button>
+                <button class="text__button" onclick="sendForm()">Отправить</button>
             </div>
         </div>
     </div>

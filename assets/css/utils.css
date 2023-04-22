@@ -6,6 +6,7 @@
 }
 
 .hidden { display: none !important; }
+.transparent { opacity: 0; }
 
 .text__button {
     display: inline-block;

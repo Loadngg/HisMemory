@@ -69,6 +69,7 @@ section:first-child { margin-bottom: 0; }
     transform: translate3d(0, 0, 0);
 }
 
+.header .nav__link { color: var(--color-brown-600); }
 .header.fixed .nav__link { color: var(--text-color) }
 
 .header__inner {
@@ -80,7 +81,7 @@ section:first-child { margin-bottom: 0; }
 .header__logo { font-size: 1.2rem; }
 
 /*Nav*/
-.nav__link { color: var(--color-brown-600); }
+.nav__link { color: var(--text-color); }
 
 .nav-toggle {
     width: 30px;

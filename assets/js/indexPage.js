@@ -1,21 +1,26 @@
 // Form logic
+const form_block = document.getElementById("review")
+const form = document.getElementById("review__form")
 const contactUsLink = document.getElementById("contactus-link");
-contactUsLink.onclick = () => form_block.classList.remove("hidden")
-
-// Make review
-let makeBtn = document.getElementById('make__review');
-let form = document.getElementById('review__form');
+contactUsLink.onclick = () => {
+    showForm()
+}
 
 function showForm() {
-    form.classList.remove('hidden')
+    form_block.classList.remove('hidden')
     setTimeout(() => {
-        form.classList.remove('transparent')
+        form_block.classList.remove('transparent')
     }, 200)
 }
 
 function closeForm() {
-    form.classList.add('transparent')
+    form_block.classList.add('transparent')
     setTimeout(() => {
-        form.classList.add('hidden')
+        form_block.classList.add('hidden')
     }, 200)
+}
+
+function sendForm() {
+    form.reset();
+    closeForm();
 }
