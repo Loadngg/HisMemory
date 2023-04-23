@@ -2,38 +2,42 @@
     margin: 60px 0;
 }
 
+.header *,
+.nav__link {
+    color: var(--text-color) !important;
+}
+
+.nav__link:after {
+    background-color: var(--text-color);
+}
+
 .main__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.main__chart__item {
-    width: calc(100% - 15px) !important;
-    display: flex;
-    flex-direction: column;
-}
-
 .main__charts {  
     margin-top: 1rem;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-template-rows: auto auto;
-    gap: 1rem 0;
-    grid-auto-flow: row;
-    grid-template-areas: "chart-1 chart-2 chart-3 chart-4 chart-5";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
-  
-.chart-1 { grid-area: chart-1; }
-.chart-2 { grid-area: chart-2; }
-.chart-3 { grid-area: chart-3; }
-.chart-4 { grid-area: chart-4; }
-.chart-5 { grid-area: chart-5; }
-.chart-6 { grid-area: chart-6; }
-.chart-7 { grid-area: chart-7; }
-.chart-8 { grid-area: chart-8; }
-.chart-9 { grid-area: chart-9; }
-.chart-10 { grid-area: chart-10; }
+
+.main__chart__item {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 330px;
+}
+
+.chart {
+    display: block;
+    width: 100%;
+    height: inherit;
+    object-fit: contain;
+}
 
 .chart__subtitle {
     font-size: 1.1rem;

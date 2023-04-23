@@ -32,6 +32,9 @@
     font-size: 1.8rem;
 }
 
+.intro__title,
+.intro__subtitle { color: var(--color-brown-600); }
+
 /* About */
 .about__inner,
 .research__inner,
@@ -94,10 +97,6 @@
     color: var(--color-brown-600)
 }
 
-/* Colors */
-.intro__title,
-.intro__subtitle { color: var(--color-brown-600); }
-
 /* Team */
 .team__photos {  
     display: flex;
@@ -142,12 +141,13 @@
 .photos__title {
     margin-bottom: 5px;
 
-    font-size: 14px;
+    font-size: 1.15rem;
+    line-height: 1;
     text-transform: uppercase;
 }
 
 .photos__text {
-    font-size: 15px;
+    font-size: 1.1rem;
     font-weight: 300;
     font-style: italic;
 }
