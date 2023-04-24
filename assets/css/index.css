@@ -73,6 +73,8 @@ section:first-child { margin-bottom: 0; }
 .header.fixed .nav__link { color: var(--text-color) }
 
 .header__inner {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,8 +98,9 @@ section:first-child { margin-bottom: 0; }
     cursor: pointer;
 
     position: absolute;
-    top: 16px;
-    right: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
     z-index: 1;
 }
 
@@ -107,6 +110,8 @@ section:first-child { margin-bottom: 0; }
     display: block;
     width: 100%;
     height: 3px;
+
+    background-color: var(--color-brown-600);
 
     position: absolute;
     top: 0;
@@ -125,6 +130,8 @@ section:first-child { margin-bottom: 0; }
     content: "";
     width: 100%;
     height: 3px;
+
+    background-color: var(--color-brown-600);
 
     position: absolute;
     left: 0;
@@ -176,7 +183,7 @@ section:first-child { margin-bottom: 0; }
     transition: opacity .1s linear;
 }
 
-.header.header.fixed .nav__link:after {
+.header.fixed .nav__link:after {
     background-color: var(--text-color);
 }
 
@@ -216,4 +223,52 @@ section:first-child { margin-bottom: 0; }
 .footer__inner > div { 
     width: 50%;
     position: relative; 
+}
+
+@media (max-width: 1200px) { .footer__links { gap: 5px; } }
+
+@media (max-width: 770px) {
+    /* Header */
+    .header { padding: 10px 0; }
+
+    /* Nav */
+    .nav {
+        display: none;
+        width: calc(100% + 65rem);
+        text-align: right;
+
+        position: absolute;
+        top: 45px;
+        right: -32px;
+        padding-right: 2rem;
+
+        background-color: transparent;
+    }
+
+    .header.fixed .nav { background-color: var(--background-color); }
+
+    .nav.active,
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .header.fixed .nav-toggle__item:before,
+    .header.fixed .nav-toggle__item:after
+    .header.fixed .nav-toggle__item {
+        background-color: var(--text-color) !important;
+    }
+
+    .footer__links { gap: 15px; }
+}
+
+@media (max-width: 660px) {
+    .footer__inner { justify-content: space-between; }
+    .footer__left, .footer__right { width: auto !important; }
+    .footer__right { gap: 15px; }
 }

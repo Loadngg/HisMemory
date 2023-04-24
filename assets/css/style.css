@@ -101,10 +101,12 @@
 .team__photos {  
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .team__photo__item {
     position: relative;
+    width: 25%;
 
     background: linear-gradient(to bottom, var(--color-brown-900), var(--color-brown-300));
 }
@@ -226,3 +228,96 @@
 }
 
 .close__btn:hover { opacity: .7; }
+
+@media (max-width: 1100px) {
+    .review__form__item > label { font-size: .9rem; }
+}
+
+@media (max-width: 980px) {
+    .review__form__item { 
+        align-items: start;
+        flex-direction: column; 
+        gap: 5px;
+        width: 100%;
+    }
+
+    .review__form__item > input { width: 100%; }
+}
+
+@media (max-width: 980px) {
+    .intro__title { font-size: 6rem; }
+
+    .about__text--left-column,
+    .research__text--left-column { font-size: 1rem; }
+
+    .form { 
+        margin-bottom: 20px;
+        padding: 0; 
+    }
+
+    .form__title { font-size: 2rem; }
+}
+
+@media (max-width: 800px) {
+    .intro__title { font-size: 4rem; }
+    .form__title { font-size: 1.5rem; }
+
+    .about__text--left-column,
+    .research__text--left-column { font-size: .8rem; }
+
+    .about__text--right-column,
+    .research__text--right-column,
+    .form__item > label { font-size: .9rem; }
+}
+
+@media (max-width: 660px) {
+    .intro__title { font-size: 3rem; }
+    .form__title { font-size: 1.2rem; }
+
+    .about__text, .research__text { 
+        flex-direction: column; 
+        gap: 30px;
+        width: 100%;
+    }
+    .about__text--left-column,
+    .research__text--left-column { font-size: 1rem; }
+
+    .about__text--right-column,
+    .research__text--right-column,
+    .form__item > label { font-size: 1rem; }
+
+    .about__text--left-column,
+    .research__text--left-column,
+    .about__text--right-column,
+    .research__text--right-column,
+    .form__item > label { width: auto !important; }
+
+    .form {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .form__inner {
+        width: 100%;
+        padding: 30px 40px;
+    }
+
+    .team__photo__item { width: 50%; }
+    .photos__title { font-size: 1rem; }
+    .photos__text { font-size: .8rem; }
+    .review__title { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+    .intro__subtitle { font-size: 1rem; }
+    .footer__inner { flex-direction: column; }
+    .close__btn {
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+    }
+
+    .review__form__item > label { font-size: .7rem; }
+    .review__form__item > input { font-size: .9rem; }
+}

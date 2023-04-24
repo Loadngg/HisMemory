@@ -35,3 +35,30 @@ for (let smoothLink of smoothLinks) {
         window.scrollTo({top: y, behavior: 'smooth'});
     })
 }
+
+// Nav
+let navToggle = document.getElementById('nav_toggle');
+let nav = document.getElementById('nav');
+let navLinks = document.getElementsByClassName('nav__link');
+
+navToggle.onclick = function (event) {
+    event.preventDefault();
+
+    if (this.classList.contains('active')) {
+        this.classList.remove('active');
+        nav.classList.remove('active');
+        header.classList.remove('active');
+    } else {
+        header.classList.add('active');
+        this.classList.add('active');
+        nav.classList.add('active');
+    }   
+}
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+        navToggle.classList.remove('active');
+        nav.classList.remove('active');
+        header.classList.remove('active');
+    })
+}

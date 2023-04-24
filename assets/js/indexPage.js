@@ -24,3 +24,4 @@ function sendForm() {
     form.reset();
     closeForm();
 }
+

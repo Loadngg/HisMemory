@@ -32,3 +32,16 @@
 .text__button--form { text-transform: none; }
 .brif--title { cursor: pointer; }
 .brif--title > span { text-decoration: underline 2px var(--text-color); }
+
+@media (max-width: 1200px) { 
+    .title { font-size: 3rem; }
+
+    .text__button {
+        padding: .4rem .8rem;
+        font-size: .7rem;
+    }
+}
+
+@media (max-width: 1200px) { 
+    .title { margin-bottom: 2rem; }
+}
