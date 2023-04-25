@@ -272,3 +272,17 @@ section:first-child { margin-bottom: 0; }
     .footer__left, .footer__right { width: auto !important; }
     .footer__right { gap: 15px; }
 }
+
+@media (max-width: 500px) {
+    .footer__inner {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px) {
+    .footer__right {
+        flex-direction: column !important;
+        justify-content: start !important;
+        gap: 0 !important;
+    }
+}

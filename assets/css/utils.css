@@ -45,3 +45,7 @@
 @media (max-width: 1200px) { 
     .title { margin-bottom: 2rem; }
 }
+
+@media (max-width: 360px) {
+    .title { font-size: 2rem; }
+}

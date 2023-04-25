@@ -307,6 +307,11 @@
     .photos__title { font-size: 1rem; }
     .photos__text { font-size: .8rem; }
     .review__title { font-size: 1.5rem; }
+
+    .review__inner {
+        margin: 0;
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -320,4 +325,9 @@
 
     .review__form__item > label { font-size: .7rem; }
     .review__form__item > input { font-size: .9rem; }
+}
+
+@media (max-width: 360px) {
+    .photos__title { font-size: .9rem; }
+    .photos__text { font-size: .7rem; }
 }
