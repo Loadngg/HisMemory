@@ -1,5 +1,5 @@
 // Scroll Top on reload
-window.onbeforeunload = () => window.screenTop();
+window.onbeforeunload = () => window.scrollTo(0, 0);
 
 // Sticky header
 let header = document.getElementById('header');

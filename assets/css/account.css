@@ -28,8 +28,7 @@
 .main__chart__item {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    height: 330px;
+    width: calc(20% - 1rem);
 }
 
 .chart {
@@ -45,24 +44,21 @@
 }
 
 @media (max-width: 1100px) {
-    .main__chart__item { width: 100%; }
-    .chart { object-fit: contain; }
+    .main__chart__item { width: 30%; }
+}
+
+@media (max-width: 1100px) {
+    .main__chart__item { width: calc(50% - 1rem); }
 }
 
 @media (max-width: 640px) {
-    .main__chart__item { height: 250px; }
+    .main__chart__item { width: 100%; }
 }
 
 @media (max-width: 480px) {
-    .main__chart__item { height: 200px; }
     .main { padding: 25px 0 0 0; }
 }
 
 @media (max-width: 400px) {
-    .main__chart__item { height: 150px; }
     .main__nav > .nav__link { font-size: .8rem; }
-}
-
-@media (max-width: 300px) {
-    .main__chart__item { height: 130px; }
 }
