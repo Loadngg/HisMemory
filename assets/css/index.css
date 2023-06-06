@@ -227,7 +227,7 @@ section:first-child { margin-bottom: 0; }
 
 @media (max-width: 1200px) { .footer__links { gap: 5px; } }
 
-@media (max-width: 1000px) {
+@media (max-width: 1240px) {
     /* Header */
     .header { padding: 10px 0; }
 

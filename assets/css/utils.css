@@ -33,6 +33,12 @@
 .brif--title { cursor: pointer; }
 .brif--title > span { text-decoration: underline 2px var(--text-color); }
 
+.innactive { 
+    opacity: .7;
+    pointer-events: none;
+    cursor: none;
+}
+
 @media (max-width: 1200px) { 
     .title { font-size: 3rem; }
 
